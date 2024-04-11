@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = [1, 2, 3, 7, 8];
+      let b = [4, 5, 6];
+      let c = 3;
+      if (c > 0 && c < a.length) {
+        a.splice(c, 0, ...b);
+      } else {
+        alert("khong the thuc hien");
+      }
+    </script>
+  </body>
+</html>

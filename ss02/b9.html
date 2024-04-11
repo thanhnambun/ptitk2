@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let carts = [
+      {
+        name: "iphone",
+        price: 7000,
+        quantity: 1,
+      },
+      {
+        name: "iphone 4",
+        price: 9000,
+        quantity: 1,
+      },
+      {
+        name: "iphone 3",
+        price: 8000,
+        quantity: 1,
+      },
+    ];
+    let sum = 0;
+    let i;
+    for (i = 0; i < carts.length; i++) {
+      sum += carts[i].price * carts[i].quantity;
+    }
+    console.log(sum);
+    </script>
+</body>
+</html>

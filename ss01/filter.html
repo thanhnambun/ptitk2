@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        chức năng : 
+        + Nếu không thỏa mãn điều kiện lọc thì sẽ tạo ra 1 mảng rỗng  
+     -->
+    <script>
+      let array = [2, 3, 4];
+      let a = array.filter((item, index, arr) => {
+        // console.log(item);
+        // console.log(index);
+        // console.log(arr);
+        return item > 4;
+      });
+      console.log(a);
+    </script>
+  </body>
+</html>

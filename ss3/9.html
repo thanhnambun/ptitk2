@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const zipArrays = (...arrays) => {
+        const length = arrays[0].length;
+        const result = [];
+
+        for (let i = 0; i < length; i++) {
+          const zipItem = arrays.map((array) => array[i]);
+          result.push(zipItem);
+        }
+
+        return result;
+      };
+
+      const arr1 = [1, 2, 3];
+      const arr2 = ["a", "b", "c"];
+      const arr3 = [true, false, true];
+
+      const result = zipArrays(arr1, arr2, arr3);
+
+      console.log(result);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Khai báo biến số nguyên và mảng sử dụng const
+      const number = 10;
+      const array = [1, 2, 3];
+
+      // Gán lại giá trị cho biến số nguyên
+      number = 20; // Lỗi: không thể gán lại giá trị cho biến const
+
+      // Thêm một phần tử vào mảng
+      array.push(4);
+
+      // In kết quả
+      console.log(number); // 10 (giá trị không thay đổi)
+      console.log(array); // [1, 2, 3, 4] (một phần tử mới được thêm vào mảng)
+    </script>
+  </body>
+</html>

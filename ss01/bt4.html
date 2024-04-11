@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>tìm kiếm bằng id</h3>
+    <input type="text" id="checkId" />
+    <button onclick="timkiem()">tìm kiếm</button>
+    <script>
+      let books = [
+        {
+          name: "truyện tranh",
+          id: 1,
+        },
+        {
+          name: "truyện chữ",
+          id: 2,
+        },
+        {
+          name: "truyện hài ",
+          id: 3,
+        },
+      ];
+      let checkId = document.getElementById("checkId");
+      function timkiem() {
+        books.find((item) => {
+          if (item.id == checkId.value) {
+            console.log(item);
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

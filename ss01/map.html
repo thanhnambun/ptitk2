@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        chức năng : 
+        +làm vc các phần tử trong mảng
+        + tương tác trực tiếp với giá trị trong mảng 
+        + tạo mảng mới và mảng mới có số phần tử bằnh số phần tử của mảng ban đầu  
+     -->
+    <script>
+      let array = [2, 3, 4];
+      let a = array.map((item, index, arr) => {
+        // console.log(item);
+        // console.log(index);
+        // console.log(arr);
+        return item > 3;
+      });
+      console.log(a);
+    </script>
+  </body>
+</html>

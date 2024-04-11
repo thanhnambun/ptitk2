@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const mergeObjects = (...objects) => {
+        return Object.assign({}, ...objects);
+      };
+
+      const obj1 = { name: "John", age: 25 };
+      const obj2 = { gender: "Male" };
+      const obj3 = { age: 30, city: "New York" };
+
+      const mergedObject = mergeObjects(obj1, obj2, obj3);
+
+      console.log(mergedObject);
+    </script>
+  </body>
+</html>

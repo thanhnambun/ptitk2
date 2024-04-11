@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        Chức năng : 
+            Tìm kiếm phần tử 
+        Điều kiện :
+            nếu thỏa mãn điều kiện trả về giá trị 
+            nếu không thì trả về undefind
+     -->
+    <script>
+      let user = [
+        {
+          name: "Hoàng",
+          age: 6,
+        },
+        {
+          name: "Hoàng",
+          age: 5,
+        },
+        {
+          name: "Hoàng",
+          age: 2,
+        },
+      ];
+      let check = user.find((item, index, arr) => {
+        return item.age === 6;
+      });
+      console.log(check);
+    </script>
+  </body>
+</html>

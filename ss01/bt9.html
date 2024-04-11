@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let users = [
+        { id: 1, name: "Alice", hobbies: ["Reading", "Drawing"] },
+        { id: 2, name: "Bob", hobbies: ["Gaming", "Cooking"] },
+        { id: 3, name: "Charlie", hobbies: ["Drawing", "Swimming"] },
+        { id: 4, name: "David", hobbies: ["Reading", "Gaming"] },
+      ];
+      let x = [];
+      let check = users.filter((item) => {
+        return item.hobbies.forEach((value) => {
+          if (!x.includes(value)) {
+            x.push(value);
+          }
+          return x;
+        });
+      });
+      console.log(x);
+    </script>
+  </body>
+</html>
